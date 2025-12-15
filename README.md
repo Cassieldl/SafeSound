@@ -85,16 +85,16 @@ htdocs/safesound/backend/
 ---
 
 
-🔗 Documentação da API – Patients
+### 🔗 Documentação da API – Patients
 http://localhost/safesound/backend/patients/patients.php
 
-🔹 Listar todos os pacientes (GET)
+###🔹 Listar todos os pacientes (GET)
 http://localhost/safesound/backend/patients/patients.php?op=list
 📌 Retorna a lista completa de pessoas cadastradas.
 
 ---
 
-🔹 Criar novo paciente (POST)
+###🔹 Criar novo paciente (POST)
 http://localhost/safesound/backend/patients/patients.php
 
 📦 Exemplo de corpo da requisição (JSON):
@@ -111,7 +111,7 @@ http://localhost/safesound/backend/patients/patients.php
 
 ---
 
-🔹 Atualizar paciente (PUT)
+###🔹 Atualizar paciente (PUT)
 http://localhost/safesound/backend/patients/patients.php?id=5
 
 📦 Exemplo de corpo da requisição (JSON):
@@ -126,7 +126,7 @@ http://localhost/safesound/backend/patients/patients.php?id=5
 
 ---
 
-🔹 Excluir paciente (DELETE)
+###🔹 Excluir paciente (DELETE)
 http://localhost/safesound/backend/patients/patients.php?id=23
 📌 Exclusão realizada via parâmetro na URL.
 
