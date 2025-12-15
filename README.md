@@ -135,10 +135,10 @@ http://localhost/safesound/backend/patients/patients.php?id=23
 
 ## 🗄️ Estrutura do Banco de Dados
 
-📌 Criação do banco de dados
+### 📌 Criação do banco de dados
 CREATE DATABASE `safesound` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 
-📍 Cidades
+### 📍 Cidades
 CREATE TABLE `cidades` (
   `id_cidade` int(11) NOT NULL AUTO_INCREMENT,
   `nome_cidade` varchar(255) NOT NULL,
@@ -147,7 +147,7 @@ CREATE TABLE `cidades` (
   PRIMARY KEY (`id_cidade`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-👴 Pacientes
+### 👴 Pacientes
 CREATE TABLE `pessoa` (
   `id_pessoa` int(11) NOT NULL AUTO_INCREMENT,
   `nome_pessoa` varchar(100) NOT NULL,
@@ -163,7 +163,7 @@ CREATE TABLE `pessoa` (
   UNIQUE KEY `cpf_pessoa` (`cpf_pessoa`)
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-⚠️ Lembrete
+### ⚠️ Lembrete
 CREATE TABLE `lembrete` (
   `id_lembrete` int(11) NOT NULL AUTO_INCREMENT,
   `id_pessoa` int(11) NOT NULL,
@@ -179,7 +179,7 @@ CREATE TABLE `lembrete` (
   CONSTRAINT `lembrete_ibfk_1` FOREIGN KEY (`id_pessoa`) REFERENCES `pessoa` (`id_pessoa`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-♾️ Rotina
+### ♾️ Rotina
 CREATE TABLE `rotina` (
   `id_rotina` int(11) NOT NULL AUTO_INCREMENT,
   `id_pessoa` int(11) NOT NULL,
