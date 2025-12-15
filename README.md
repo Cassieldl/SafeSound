@@ -1,4 +1,4 @@
-# 🛡️ SafeSound
+# 💜 SafeSound
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 ![Frontend](https://img.shields.io/badge/frontend-React%20%2B%20TypeScript-blue)
